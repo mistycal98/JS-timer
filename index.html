@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Time Application | Tushar</title>
 
     <!-- JavaScript -->
-    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
     <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -17,12 +19,10 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="timer">00:00:00</div>
-        <div id="btn" class="start" onclick="start()"><i class="fas fa-play"></i></div>
-        <div id="btn" class="stop" onclick="stop()"><i class="fas fa-pause"></i></div>
-        <div id="btn" class="reset" onclick="reset()"><i class="fas fa-redo"></i></div>
-    </div>
+    <div id="timer">00:00:00</div>
+    <div id="startStop" class="btn start" onclick="startStop()"><i class="fas fa-play"></i></div>
+    <!-- <div id="btn" class="stop" onclick="stop()"><i class="fas fa-pause"></i></div> -->
+    <div id="btn" class="reset" onclick="reset()"><i class="fas fa-redo"></i></div>
 </body>
 
 </html>
