@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+body {
+  font-family: Montserrat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 4rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  margin: auto;
+  margin-top: 100px;
+  background-color: teal;
+}

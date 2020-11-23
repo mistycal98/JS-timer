@@ -7,11 +7,7 @@
 
     <title>Time Application | Tushar</title>
 
-    <!-- JavaScript -->
-    <script type="text/javascript" src="./js/script.js"></script>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="./css/style.css">
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/95a5e83b85.js" crossorigin="anonymous"></script>
@@ -19,10 +15,23 @@
 </head>
 
 <body>
-    <div id="timer">00:00:00</div>
-    <div id="startStop" class="btn start" onclick="startStop()"><i class="fas fa-play"></i></div>
-    <!-- <div id="btn" class="stop" onclick="stop()"><i class="fas fa-pause"></i></div> -->
-    <div id="btn" class="reset" onclick="reset()"><i class="fas fa-redo"></i></div>
+    <div class="card">
+        <div id="time">
+            <p id="timer">00:00:00</p>
+        </div>
+        <div class="buttons">
+            <div id="startStop" class="btn start" onclick="startStop()"><i class="fas fa-play fa-2x"></i></div>
+            <!-- <div id="btn" class="stop" onclick="stop()"><i class="fas fa-pause"></i></div> -->
+            <div id="btn" class="reset btn" onclick="reset()"><i class="fas fa-redo fa-2x"></i></div>
+    
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+console.log('starting Script.....');
+
 let hours = 0;
 let minutes = 0;
 let seconds = 0;
@@ -44,20 +46,16 @@ function start() {
     document.getElementById('timer').innerHTML = hour + ":" + minute + ":" + second;
 }
 
-
-
-
-
 function startStop() {
     if (status === 'stop') {
 
         interval = window.setInterval(start, 1000);
-        document.getElementById('startStop').innerHTML = '<i class="fas fa-pause"></i>';
+        document.getElementById('startStop').innerHTML = '<i class="fas fa-pause fa-2x"></i>';
         status = 'start';
 
     } else {
         window.clearInterval(interval);
-        document.getElementById('startStop').innerHTML = '<i class="fas fa-play"></i>';
+        document.getElementById('startStop').innerHTML = '<i class="fas fa-play fa-2x"></i>';
 
         status = 'stop';
     }
@@ -69,5 +67,5 @@ function reset() {
     minute = 0;
     second = 0;
     document.getElementById('timer').innerHTML="00:00:00";
-    document.getElementById('startStop').innerHTML='<i class="fas fa-play"></i>';
+    document.getElementById('startStop').innerHTML='<i class="fas fa-play fa-2x"></i>';
 }
