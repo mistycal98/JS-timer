@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body {
   font-family: Montserrat;
 }
@@ -10,11 +10,45 @@ body {
   box-sizing: border-box;
 }
 
+.title {
+  margin-top: 3rem;
+}
+
+.title-name {
+  font-size: 3rem;
+  text-align: center;
+  font-family: Pacifico;
+  font-weight: 300;
+}
+
 p {
-  font-size: 4rem;
+  font-size: 7rem;
   margin: auto;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.card {
+  width:600px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  margin: auto;
+  margin-top: 100px;
+  background-color: teal;
+}
+
+#hour,
+#min {
+  font-size: 1rem;
+}
+
+#sec {
+  font-size: 3rem;
+}
+
+#sec span {
+  font-size: 1rem;
 }
 
 .buttons {
@@ -23,11 +57,13 @@ p {
   margin: 20px;
 }
 
-.card {
-  width: 400px;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-  margin: auto;
-  margin-top: 100px;
-  background-color: teal;
+.fas{
+  padding: 1rem;
 }
+
+#startStop:hover, #reset:hover{
+ color: aliceblue;
+  border-radius: 50%;
+}
+
+
