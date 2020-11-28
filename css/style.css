@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 body {
   font-family: Montserrat;
 }
@@ -10,33 +11,30 @@ body {
   box-sizing: border-box;
 }
 
-.title {
-  margin-top: 3rem;
-}
-
-.title-name {
-  font-size: 3rem;
-  text-align: center;
-  font-family: Pacifico;
-  font-weight: 300;
-}
-
-p {
+#timer {
   font-size: 7rem;
   margin: auto;
   text-align: center;
   margin-bottom: 2rem;
 }
 
+.info {
+  font-size: 3rem;
+  text-align: center;
+  font-family: Satisfy;
+  font-weight: 100;
+}
+
 .card {
-  width:600px;
+  width: 600px;
   height: 300px;
-  padding: 10px;
+  align-self: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-  margin: auto;
-  margin-top: 100px;
+  margin: 5rem auto;
   background-color: teal;
 }
+
+/* #ef4723 */
 
 #hour,
 #min {
@@ -57,13 +55,12 @@ p {
   margin: 20px;
 }
 
-.fas{
+.fas {
   padding: 1rem;
 }
 
-#startStop:hover, #reset:hover{
- color: aliceblue;
+#startStop:hover,
+#reset:hover {
+  color: aliceblue;
   border-radius: 50%;
 }
-
-

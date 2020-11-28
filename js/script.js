@@ -12,7 +12,7 @@ let interval = 0;
 
 let status = "stop";
 
-function start() {
+const start = () => {
   seconds++;
 
   if (seconds / 60 === 1) {
@@ -45,11 +45,13 @@ function start() {
   document.getElementById(
     "timer"
   ).innerHTML = `${hour}<span id="hour">H </span>${minute}<span id="min" >M </span><span id="sec">${second}<span>S </span></span>`;
-}
+  document.title =
+    hour + ":" + minute + ":" + second + " Time Application | Tushar";
+};
 
-function startStop() {
+const startStop = () => {
   if (status === "stop") {
-    interval = window.setInterval(start, 1);
+    interval = window.setInterval(start, 1000);
     document.getElementById("startStop").innerHTML =
       '<i class="fas fa-pause fa-4x"></i>';
     status = "start";
@@ -60,14 +62,17 @@ function startStop() {
 
     status = "stop";
   }
-}
+};
 
-function reset() {
+const reset = () => {
   interval = window.clearInterval(interval);
   hour = 0;
   minute = 0;
   second = 0;
-  document.getElementById("timer").innerHTML = `00<span id="hour">H </span>00<span id="min" >M </span><span id="sec">00<span>S </span></span>`;
+  document.getElementById(
+    "timer"
+  ).innerHTML = `00<span id="hour">H </span>00<span id="min" >M </span><span id="sec">00<span>S </span></span>`;
   document.getElementById("startStop").innerHTML =
     '<i class="fas fa-play fa-4x"></i>';
-}
+  document.title = "Time Application | Tushar";
+};
